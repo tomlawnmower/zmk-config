@@ -26,8 +26,8 @@
 &gresc     &kp N1    &kp N2  &kp N3    &kp N4  &kp N5  &kp N6     &kp N7  &kp N8  &kp N9     &kp N0    &kp MINUS  &kp EQUAL          &kp BSPC  &kp BSPC
 &kp TAB    &kp Q     &kp W   &kp E     &kp R   &kp T   &kp Y      &kp U   &kp I   &kp O      &kp P     &kp LBKT   &kp RBKT                     &kp BSLH
 &mo 1      &kp A     &kp S   &kp D     &kp F   &kp G   &kp H      &kp J   &kp K   &kp L      &kp SEMI  &kp SQT                                 &kp RET
-&kp LSHFT            &kp Z   &kp X     &kp C   &kp V   &kp B      &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT                    &mo 4
-&kp LCTRL  &kp LGUI          &kp LALT                  &kp SPACE                             &kp RALT  &kp RGUI   &kp RIGHT_CONTROL            &mo 4
+&kp LSHFT            &kp Z   &kp X     &kp C   &kp V   &kp B      &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT                    &mo 5
+&kp LCTRL  &kp LGUI          &kp LALT                  &kp SPACE                             &kp RALT  &kp RGUI   &kp RIGHT_CONTROL            &mo 5
             >;
         };
 
@@ -45,7 +45,7 @@
 &trans  &kp BACKSPACE     &trans            &kp ENTER         &trans            &trans      &trans            &kp HOME  &kp UP_ARROW    &kp END    &trans         &trans  &trans             &trans
 &trans  &kp LA(A)         &kp LA(S)         &trans            &kp LA(F)         &trans      &kp LG(LEFT)      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp LG(RIGHT)  &trans                     &kp UNDERSCORE
 &trans                    &kp LA(Z)         &kp LA(X)         &kp LA(C)         &kp LA(V)   &trans            &trans    &trans          &trans     &trans         &trans  &kp MINUS          &trans
-&trans  &trans                              &kp LEFT_SHIFT                                  &trans                                                 &trans         &trans  &trans             &trans
+&mo 4   &trans                              &kp LEFT_SHIFT                                  &kp DELETE                                             &trans         &trans  &trans             &trans
             >;
         };
 
@@ -55,7 +55,7 @@
 &kp TAB    &kp Q     &kp W   &kp E     &kp R   &kp T   &kp Y      &kp U   &kp I   &kp O      &kp P     &kp LBKT   &kp RBKT                     &kp BSLH
 &kp CAPS   &kp A     &kp S   &kp D     &kp F   &kp G   &kp H      &kp J   &kp K   &kp L      &kp SEMI  &kp SQT                                 &kp RET
 &kp LSHFT            &kp Z   &kp X     &kp C   &kp V   &kp B      &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT                    &trans
-&kp LCTRL  &kp LGUI          &kp LALT                  &kp SPACE                             &kp RALT  &kp RGUI   &kp RIGHT_CONTROL            &mo 4
+&kp LCTRL  &kp LGUI          &kp LALT                  &kp SPACE                             &kp RALT  &kp RGUI   &kp RIGHT_CONTROL            &mo 5
             >;
         };
 
@@ -74,6 +74,16 @@
 &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &sys_reset
 &bt BT_SEL 2          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
 &bt BT_SEL 3  &trans          &trans                  &trans                          &trans  &trans  &trans          &trans
+            >;
+        };
+
+        numpad_layer {
+            bindings = <
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7  &kp N8  &kp N9  &trans   &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6  &trans   &trans                  &kp RET
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3   &trans  &trans          &trans
+&trans  &trans          &trans                  &kp N0                          &kp DOT  &trans  &trans          &trans
             >;
         };
 
