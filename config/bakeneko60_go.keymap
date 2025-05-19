@@ -121,7 +121,12 @@
 
         alt_backtick {
             bindings = <&kp LA(GRAVE)>;
-            key-positions = <57 0>;
+            key-positions = <30 19>;
+        };
+
+        test {
+            bindings = <&kp LS(A)>;
+            key-positions = <30 33>;
         };
     };
 };
