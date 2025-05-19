@@ -119,14 +119,14 @@
     combos {
         compatible = "zmk,combos";
 
-        alt_backtick {
+        alt_backtick_using_a_r {
             bindings = <&kp LA(GRAVE)>;
             key-positions = <30 19>;
         };
 
-        test {
+        alt_backtick {
             bindings = <&kp LS(A)>;
-            key-positions = <30 33>;
+            key-positions = <57 0>;
         };
     };
 };
