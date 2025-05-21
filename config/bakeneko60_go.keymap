@@ -53,7 +53,7 @@
             bindings = <
 &trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)  &kp LA(NUMBER_6)  &trans    &trans           &trans       &trans         &trans  &trans     &trans  &kp LG(BACKSPACE)
 &trans  &kp BACKSPACE     &kp LA(T)         &kp ENTER         &trans            &kp LC(T)   &trans            &kp HOME  &kp UP_ARROW     &kp END      &trans         &trans  &trans             &trans
-&trans  &kp LA(A)         &kp LA(S)         &trans            &kp LA(F)         &trans      &kp LG(LEFT)      &kp LEFT  &kp DOWN_ARROW   &kp RIGHT    &kp LG(RIGHT)  &trans                     &kp UNDERSCORE
+&trans  &kp LA(A)         &kp LA(S)         &kp LA(GRAVE)     &kp LA(F)         &trans      &kp LG(LEFT)      &kp LEFT  &kp DOWN_ARROW   &kp RIGHT    &kp LG(RIGHT)  &trans                     &kp UNDERSCORE
 &trans                    &kp LA(Z)         &kp LA(X)         &kp LA(C)         &kp LA(V)   &trans            &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans         &trans  &kp MINUS          &trans
 &mo 4   &trans                              &kp LEFT_SHIFT                                  &kp DELETE                                                &trans         &trans  &trans             &trans
             >;
@@ -116,17 +116,5 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        alt_backtick_using_a_r {
-            bindings = <&kp LA(GRAVE)>;
-            key-positions = <30 19>;
-        };
-
-        alt_backtick {
-            bindings = <&kp LS(A)>;
-            key-positions = <57 0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 };
